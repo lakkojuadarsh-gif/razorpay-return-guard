@@ -5,7 +5,7 @@ Razorpay ReturnGuard™ is a defensive risk management middleware engineered to 
 
 ---
 
-## 🚀 System Architecture
+## System Architecture
 The core architecture consists of three interconnected layers working together in real time:
 1. **The AI Brain (`train_model.py`)**: An optimized XGBoost Machine Learning pipeline trained on structured transaction data arrays, using class-weight scaling to balance heavily imbalanced checkout profiles.
 2. **The Gateway Engine (`app.py`)**: A blazing-fast FastAPI backend serving a live prediction endpoint (`/v1/risk/score`) that calculates numeric risk probabilities within milliseconds.
@@ -13,7 +13,7 @@ The core architecture consists of three interconnected layers working together i
 
 ---
 
-## ⚡ The 3 Risk Operational Scenarios
+## The 3 Risk Operational Scenarios
 
 Based on the calculated risk severity, the gateway executes automated defensive workflows:
 
@@ -23,13 +23,13 @@ Based on the calculated risk severity, the gateway executes automated defensive 
 
 ---
 
-## 📊 Meeting 'The Bar' (Honest Metrics)
+## Meeting 'The Bar' (Honest Metrics)
 - **True Evaluation**: The model explicitly isolates its training metrics by validating on a 20% completely unseen, held-out test dataset to report true Precision and Recall.
 - **False-Positive Optimization**: The system features an economic loss calculator that addresses false-positive costs by mathematically evaluating user conversion friction against saved reverse logistics shipping overheads.
 
 ---
 
-## 🛠️ Local Installation & Setup
+## Local Installation & Setup
 
 1. Clone this repository and open it in VS Code.
 2. Install the requirements in your terminal:
